@@ -1,0 +1,172 @@
+/
+body {
+    
+    font-family: Arial, sans-serif;
+}
+
+a:hover {
+    color: skyblue!important; /* изменение цвета текста при наведении */
+    text-decoration: underline; /* добавление подчеркивания при наведении */
+}
+
+/* Стили для меню сайта */
+a {
+    color: #333; /* Цвет текста */
+    font-size: 30px; /* Размер шрифта */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.banner {
+    display: black;
+    width: 100%;
+    height: auto;
+}
+
+.center-text {
+    text-align: center;
+    margin-top: 20px;
+     font-size: 22px;
+    font-weight: bold;
+}
+
+
+.container {
+    width: 55%; /* Ширина контейнера */
+    margin: 0 auto; /* Центрируем контейнер на странице */
+    padding: 20px; /* Отступы внутри контейнера */
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 колонки с равной шириной */
+    grid-gap: 100px; /* Отступ между ячейками */
+}
+
+.grid-item {
+    background-color: #3aa8ff;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    
+}
+
+.text {
+    font-weight: bold;
+}
+
+.content img {
+    width: 30%; /* Размер фотографии */
+    height: 65px;
+    filter: invert(0%);
+    margin-top: 10px;
+    height: auto;
+    
+}
+
+.description {
+    margin-top: 10px;
+}
+
+.hidden {
+  display: none; /* Скрываем ответы по умолчанию */
+  font-size: 16px; /* Устанавливаем размер текста ответа */
+  font-weight: normal; /* Возвращаем обычный (нежирный) текст */
+}
+
+.faq {
+  text-align: center; /* Выравниваем содержимое по центру */
+}
+
+.toggle-btn {
+    margin-left: 10px; /* Отступ кнопки справа от вопроса */
+    background-color: #3aa8ff;
+    color: white;
+    border: none;
+    padding: 4px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    font-size: 18px; /* Устанавливаем размер текста вопроса */
+    font-weight: bold; /* Делаем текст вопроса жирным */
+    justify-content: center; /* Центрируем вопрос по горизонтали */  
+}
+
+.answer {
+  left: 0; /* Выравниваем по левому краю контейнера вопроса */
+  font-size: 14px; /* Устанавливаем размер текста ответа */
+  font-weight: normal; /* Возвращаем обычный (нежирный) текст */
+  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container2 {
+    background-color: #3aa8ff; /* Голубая заливка */
+    width: 100%;
+    padding: 50px 0; /* Отступы сверху и снизу */
+    box-sizing: border-box;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.review-box {
+    width: calc(25% - 40px); /* 25% ширины контейнера минус отступы между боксами */
+    margin-bottom: 40px; /* Промежуток между боксами */
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box; /* Учитываем внешние отступы в расчетах ширины */
+}
+
+.review-box img {
+    width: 100px; /* Ширина фото */
+}
+
+.client-info {
+    margin-top: 10px;
+}
+
+.client-id {
+    font-size: 14px; /* Размер номера клиента */
+    color: gray;
+}
+
+.client-name {
+    font-size: 18px; /* Размер имени клиента */
+    font-weight: bold;
+}
+
+.review {
+    margin-top: 10px;
+    font-size: 16px; /* Размер текста отзыва */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

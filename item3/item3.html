@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Товар3</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" id="logo"></a>
+            <img src="logo.png" width="80" height="70">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../\main/index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../catalog/catalog.html">Каталог</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    </header> 
+<hr>
+
+    
+    
+<div class="container">
+    
+    <div class="product-image">
+        <img src="item3.jpg" alt="Product Image">
+        <h2 class="product-title">Роликовые коньки Roces Chuck Plain</h2>
+  </div>
+  <div class="buttons">
+    <button id="description-btn" class="active">Описание</button>
+    <button id="characteristics-btn">Характеристики</button>
+    <button id="reviews-btn">Цены</button> 
+  </div>
+  <div class="content">
+    <div id="description" class="tab-content active">
+      <p>Роликовые коньки-квады с попарно расположенными колесами обеспечивают комфортное и безопасное катание. Ботинок модели выполнен в стиле кед.</p>
+    </div>
+    <div id="characteristics" class="tab-content">
+      <p>
+        <li>В модели предусмотрена качественная плоская шнуровка, которая гарантирует надежную фиксацию ботинка на ноге. </li>
+        <li>Анатомическая стелька обеспечивает непревзойденный комфорт во время катания.</li>
+        <li>Надежная рама из полипропилена повышает прочность конструкции и продлевает срок службы коньков.</li>
+        <li>Благодаря переднему тормозу на роликовых коньках можно маневрировать и исполнять различные элементы.</li></p>
+    </div>
+    <div id="reviews" class="tab-content">
+      <p>
+        <li> Час - 180 рублей.</li>
+        <li>Весь день (с открытия до закрытия) - 450 руб.</li>
+        <li>Одни сутки (24 часа) – 750 рублей, далее + 400 рублей каждые сутки</li>
+        <li>Размеры: 36-42</li>
+        </p>
+    </div>
+  </div>
+</div>
+<!-- стрелки -->
+  <div class="navigation">
+    <div class="nav-item">
+      <div class="circle">1</div>
+      <div class="text">Выберите даты аренды с помощью календаря</div>
+      <div class="arrow">&#10140;</div>
+    </div>
+    <div class="nav-item">
+      <div class="circle">2</div>
+      <div class="text">Оплатите картой онлайн или курьеру</div>
+      <div class="arrow">&#10140;</div>
+    </div>
+    <div class="nav-item">
+      <div class="circle">3</div>
+      <div class="text">Катайтесь сколько захотите</div>
+    </div>
+  </div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const descriptionBtn = document.getElementById('description-btn');
+  const characteristicsBtn = document.getElementById('characteristics-btn');
+  const reviewsBtn = document.getElementById('reviews-btn'); // Новая кнопка
+  const descriptionTab = document.getElementById('description');
+  const characteristicsTab = document.getElementById('characteristics');
+  const reviewsTab = document.getElementById('reviews'); // Новый блок для отзывов
+
+  descriptionBtn.addEventListener('click', function() {
+    if (!descriptionBtn.classList.contains('active')) {
+      descriptionBtn.classList.add('active');
+      characteristicsBtn.classList.remove('active');
+      reviewsBtn.classList.remove('active'); // Убираем активный класс с других кнопок
+      descriptionTab.classList.add('active');
+      characteristicsTab.classList.remove('active');
+      reviewsTab.classList.remove('active'); // Скрываем другие блоки
+    }
+  });
+
+  characteristicsBtn.addEventListener('click', function() {
+    if (!characteristicsBtn.classList.contains('active')) {
+      characteristicsBtn.classList.add('active');
+      descriptionBtn.classList.remove('active');
+      reviewsBtn.classList.remove('active'); // Убираем активный класс с других кнопок
+      characteristicsTab.classList.add('active');
+      descriptionTab.classList.remove('active');
+      reviewsTab.classList.remove('active'); // Скрываем другие блоки
+    }
+  });
+
+  reviewsBtn.addEventListener('click', function() {
+    if (!reviewsBtn.classList.contains('active')) {
+      reviewsBtn.classList.add('active');
+      descriptionBtn.classList.remove('active');
+      characteristicsBtn.classList.remove('active'); // Убираем активный класс с других кнопок
+      reviewsTab.classList.add('active');
+      descriptionTab.classList.remove('active');
+      characteristicsTab.classList.remove('active'); // Скрываем другие блоки
+    }
+  });
+});
+</script>
+    
+
+    
+<hr>
+    <footer>
+        &copy; Все права защищены
+    </footer>
+</body>
+</html>
+
+
+ 

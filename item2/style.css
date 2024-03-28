@@ -1,0 +1,96 @@
+/* Общие стили */
+body {
+
+    font-family: Arial, sans-serif;
+}
+
+a:hover {
+    color: skyblue!important; /* изменение цвета текста при наведении */
+    text-decoration: underline; /* добавление подчеркивания при наведении */
+}
+
+/* Стили для меню сайта */
+a {
+    color: #333; /* Цвет текста */
+    font-size: 24px; /* Размер шрифта */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.container {
+  text-align: center;
+}
+
+.product-image {
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  margin-right: 10px;
+}
+
+.tab-content {
+  display: none;
+  margin-top: 10px
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.buttons button {
+  margin-right: 10px;
+  border-radius: 10px; /* добавляем закругленные углы */
+  border: 2px solid #0077cc; /* устанавливаем  границы кнопки и ее толщину */
+  background-color: transparent; /* делаем фон кнопки прозрачным */
+  color: #0077cc; /* устанавливаем цвет текста кнопки */
+  padding: 8px 16px; /* добавляем отступы внутри кнопки */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* добавляем плавное изменение цвета при наведении */
+}
+
+.buttons button:hover {
+  background-color: #f0f8ff; /* изменяем цвет фона кнопки при наведении */
+}
+
+.buttons button.active {
+  background-color: #0077cc; /* изменяем цвет фона кнопки при активации */
+  color: #fff; /* изменяем цвет текста кнопки при активации */
+}
+
+
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #0077cc;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  
+}
+
+.text {
+  margin-right: 10px;
+}
+
+.arrow {
+  font-size: 24px;
+  color: #0077cc;
+}

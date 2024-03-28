@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Товар1</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" id="logo"></a>
+            <img src="logo.png" width="80" height="70">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../main/index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../catalog/catalog.html">Каталог</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    </header> 
+<hr>
+
+    
+    
+<div class="container">
+    
+    <div class="product-image">
+        <img src="item1.jpg" alt="Product Image">
+        <h2 class="product-title">Дорожный велосипед Format 1432 27.5 (2023)</h2>
+  </div>
+  <div class="buttons">
+    <button id="description-btn" class="active">Описание</button>
+    <button id="characteristics-btn">Характеристики</button>
+    <button id="reviews-btn">Цены</button> 
+  </div>
+  <div class="content">
+    <div id="description" class="tab-content active">
+      <p>Format 1432 - легкий, отзывчивый и быстрый гибридный велосипед, который сочетает в себе все преимущества треккинговых и городских велосипедов. Полуспортивная посадка будет удобна как новичкам, так и опытным велосипедистам. Рама выполнена по всем актуальным решениям стиля и надежности. И главное - стильный, лаконичный дизайн, который точно придется по вкусу многим.</p>
+    </div>
+    <div id="characteristics" class="tab-content">
+      <p><li>Рама из алюминиевого сплава 6061, гидроформинг и двойной баттинг труб. </li>
+        <li>Также срытая проводка тросов переключения скоростей, прямой рулевой стакан с полуинтегрированной рулевой колонкой, крепление калипера внутри перьев по стандарту Post Mount</li>
+        <li>Жесткая вилка из алюминиевого сплава 6061</li>
+        <li>Прочные 27,5" колеса на компонентах Format, двойные обода и втулки с промышленными подшипниками</li>
+        <li>Универсальный рисунок резины CST All Terrains</li>
+        <li>Трансмиссия на 16 скоростей с комбинацией комплектующих LTWOO и Shimano</li>
+        <li>Дисковые механические тормоза Shimano TX805 на роторах 160 мм.</li>
+        <li>Каретка и рулевая колонка на промышленных подшипниках</li>
+        <li>Фирменные компоненты Format - втулки, обода, руль, грипсы, вынос и подседельный штырь</li></p>
+    </div>
+    <div id="reviews" class="tab-content">
+      <p><li> Час - 250 рублей.</li>
+
+<li>Весь день (с открытия до закрытия) - 1000 руб.</li>
+
+<li>Одни сутки (24 часа) – 1200 рублей, далее + 600 рублей каждые сутки;</li></p>
+    </div>
+  </div>
+</div>
+<!-- стрелки -->
+  <div class="navigation">
+    <div class="nav-item">
+      <div class="circle">1</div>
+      <div class="text">Выберите даты аренды с помощью календаря</div>
+      <div class="arrow">&#10140;</div>
+    </div>
+    <div class="nav-item">
+      <div class="circle">2</div>
+      <div class="text">Оплатите картой онлайн или курьеру</div>
+      <div class="arrow">&#10140;</div>
+    </div>
+    <div class="nav-item">
+      <div class="circle">3</div>
+      <div class="text">Катайтесь сколько захотите</div>
+    </div>
+  </div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const descriptionBtn = document.getElementById('description-btn');
+  const characteristicsBtn = document.getElementById('characteristics-btn');
+  const reviewsBtn = document.getElementById('reviews-btn'); // Новая кнопка
+  const descriptionTab = document.getElementById('description');
+  const characteristicsTab = document.getElementById('characteristics');
+  const reviewsTab = document.getElementById('reviews'); // Новый блок для отзывов
+
+  descriptionBtn.addEventListener('click', function() {
+    if (!descriptionBtn.classList.contains('active')) {
+      descriptionBtn.classList.add('active');
+      characteristicsBtn.classList.remove('active');
+      reviewsBtn.classList.remove('active'); // Убираем активный класс с других кнопок
+      descriptionTab.classList.add('active');
+      characteristicsTab.classList.remove('active');
+      reviewsTab.classList.remove('active'); // Скрываем другие блоки
+    }
+  });
+
+  characteristicsBtn.addEventListener('click', function() {
+    if (!characteristicsBtn.classList.contains('active')) {
+      characteristicsBtn.classList.add('active');
+      descriptionBtn.classList.remove('active');
+      reviewsBtn.classList.remove('active'); // Убираем активный класс с других кнопок
+      characteristicsTab.classList.add('active');
+      descriptionTab.classList.remove('active');
+      reviewsTab.classList.remove('active'); // Скрываем другие блоки
+    }
+  });
+
+  reviewsBtn.addEventListener('click', function() {
+    if (!reviewsBtn.classList.contains('active')) {
+      reviewsBtn.classList.add('active');
+      descriptionBtn.classList.remove('active');
+      characteristicsBtn.classList.remove('active'); // Убираем активный класс с других кнопок
+      reviewsTab.classList.add('active');
+      descriptionTab.classList.remove('active');
+      characteristicsTab.classList.remove('active'); // Скрываем другие блоки
+    }
+  });
+});
+</script>
+    
+
+    
+<hr>
+    <footer>
+        &copy; Все права защищены
+    </footer>
+</body>
+</html>
